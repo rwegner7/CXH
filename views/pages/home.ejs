@@ -7,20 +7,17 @@
     <header>
     </header>
     <main>
-      <div >
-        <p>Demo App: Lightning Out</p>
-        <div id="leaderboard"></div>
-          </div>
-      </main>
-        <footer>
-        </footer>
+      <div id="accountboard"></div>
+    </main>
+    <footer>
+    </footer>
         <script>
           var url = "<%= ouathLightningURL %>";
           var token = "Bearer "+"<%= oauthtoken %>";
           console.log(token);
             $Lightning.use("c:cxh_AccountApp", function() {
                   $Lightning.createComponent("c:cxh_AccountDemo", {},
-                     "leaderboard",
+                     "accountboard",
                       function(cmp) {
                          // do some stuff
                       });
