@@ -1,0 +1,71 @@
+{
+  "name": "soundcloud-redux",
+  "version": "1.0.0",
+  "description": "SoundCloud API client with React, Redux, and Redux Saga",
+  "homepage": "https://soundcloud-redux.herokuapp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r-park/soundcloud-redux.git"
+  },
+  "author": {
+    "name": "Richard Park",
+    "email": "objectiv@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=8.2"
+  },
+  "scripts": {
+    "build": "run-s build:css build:js",
+    "build:css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build:js": "cross-env NODE_PATH=. react-scripts build",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build",
+    "server": "cross-env NODE_ENV=development nodemon -w 'server/**/*.*' server/main.js",
+    "start": "run-p start:css start:js",
+    "start:css": "npm run build:css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start:js": "cross-env NODE_PATH=. react-scripts start",
+    "test": "cross-env NODE_PATH=. react-scripts test --env=jsdom",
+    "test:ci": "cross-env CI=true NODE_PATH=. react-scripts test --env=jsdom",
+    "test:server": "ava server/spec.js --verbose",
+    "version": "npm run changelog && git add CHANGELOG.md"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "compression": "^1.7.0",
+    "express": "^4.15.3",
+    "helmet": "^3.8.1",
+    "history": "^4.6.3",
+    "immutable": "^3.8.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.10",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.15.6",
+    "reselect": "^3.0.1",
+    "rxjs": "^5.4.2",
+    "serve-favicon": "^2.4.3",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "conventional-changelog-cli": "^1.3.2",
+    "cross-env": "^5.0.1",
+    "enzyme": "^2.9.1",
+    "minx": "r-park/minx.git",
+    "morgan": "^1.8.2",
+    "node-sass-chokidar": "^0.0.3",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "react-test-renderer": "^15.6.1",
+    "sinon": "^2.4.1",
+    "superagent": "^3.5.2",
+    "supertest": "^3.0.0"
+  }
+}
