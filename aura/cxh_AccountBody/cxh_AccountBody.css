@@ -1,0 +1,16 @@
+/**
+ * Created by ryan on 11/2/2017.
+ */
+.THIS .border-grey {border:1px solid #e0e0e0;}
+
+.THIS td {
+    max-width: 33% !important;
+}
+
+.THIS td p {
+    white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;
+}
+
+.THIS td a {
+    white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;
+}

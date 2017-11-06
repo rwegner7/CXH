@@ -1,0 +1,20 @@
+<aura:component description="Account Demo"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,lightning:actionOverride,force:hasRecordId"
+                access="global"
+                controller="cxh_AccountController">
+
+    <!-- Event Handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.queryAccounts}" />
+    <aura:handler event="c:Event_OpenModal" action="{!c.openModal}"/>
+    <aura:handler event="c:Event_CloseModal" action="{!c.cancelModal}"/>
+
+    <!-- Local Attributes -->
+    <aura:attribute name="acct" type="Account"/>
+    <aura:attribute name="accountId" type="String" default=""/>
+    <aura:attribute name="fileId" type="String" default=""/>
+
+    <div aura:id="modal-window"></div>
+
+    <c:cxh_AccountHeader acct="{!v.acct}"/>
+    <c:cxh_AccountBody acct="{!v.acct}" fileId="{!v.fileId}" accountId="{!v.accountId}"/>
+</aura:component>

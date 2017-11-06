@@ -1,0 +1,6 @@
+
+<aura:event type="APPLICATION" description="event_CloseModal">
+    <aura:attribute name="modal_close" type="String" default="" required="true"/>
+    <aura:attribute name="object" type="String" default=""/>
+    <aura:attribute name="refresh" type="Boolean" default="false"/>
+</aura:event>

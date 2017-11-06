@@ -1,0 +1,18 @@
+<aura:component description="cxh_AccountHeader">
+
+    <aura:attribute name="acct" type="Account" />
+
+    <div class="slds-page-header">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+              <span class="slds-icon_container slds-icon-standard-opportunity" title="CPS Logo">
+                <img src="/assets/images/avatar1.jpg" alt=" " />
+              </span>
+            </div>
+            <div class="slds-media__body">
+                <h1 class="slds-page-header__title slds-truncate slds-align-middle" title="Grower Dashboard">Grower Dashboard</h1>
+                <p>{!v.acct.Name}</p>
+            </div>
+        </div>
+    </div>
+</aura:component>
