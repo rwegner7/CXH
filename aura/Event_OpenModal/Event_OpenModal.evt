@@ -1,4 +1,0 @@
-<aura:event type="APPLICATION" description="event_OpenModal">
-    <aura:attribute name="modal_open" type="String" default="" required="true"/>
-    <aura:attribute name="recordId" type="String" default="" required="true"/>
-</aura:event>

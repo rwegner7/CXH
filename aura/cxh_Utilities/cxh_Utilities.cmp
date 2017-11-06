@@ -1,3 +1,0 @@
-<aura:component description="Utility Class for all cxh Components" controller="cxh_AccountController" extensible="true">
-        {!v.body}
-</aura:component>
