@@ -5,7 +5,7 @@ var port = process.env.PORT || 3000;
 var org = nforce.createConnection({
   clientId: '3MVG9d3kx8wbPieE1owJgtExii8HVUB8wNIpym1tet6IuuMjgrejihFQOohd4weG6X.P2ZqMYSciZP0EL9HoH',
   clientSecret: '7324949617154192227',
-  redirectUri: 'https://cxh-lightningout.herokuapp.com/oauth/_callback',
+  redirectUri: 'https://cxh-ltngout2.herokuapp.com/oauth/_callback',
   apiVersion: 'v34.0',  // optional, defaults to current salesforce API version
   environment: 'sandbox',  // optional, salesforce 'sandbox' or 'production', production default
   mode: 'multi' // optional, 'single' or 'multi' user mode, multi default
