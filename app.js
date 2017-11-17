@@ -7,7 +7,7 @@ var org = nforce.createConnection({
   clientSecret: '7133529301428224511',
   redirectUri: 'https://cxh-ltngout2.herokuapp.com/oauth/_callback',
   apiVersion: 'v34.0',  // optional, defaults to current salesforce API version
-  environment: 'production',  // optional, salesforce 'sandbox' or 'production', production default
+  environment: 'sandbox',  // optional, salesforce 'sandbox' or 'production', production default
   mode: 'multi' // optional, 'single' or 'multi' user mode, multi default
 });
 
