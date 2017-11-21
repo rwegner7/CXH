@@ -10,6 +10,7 @@
     <header>
     </header>
     <main>
+      <div id="accountboard"></div>
       <div id="root">
       </div>
     </main>
@@ -31,7 +32,7 @@
           var token = "Bearer "+"<%= oauthtoken %>";
           console.log(token);
             $Lightning.use("c:cxh_AccountApp", function() {
-                  $Lightning.createComponent("c:cxh_AccountDemo", {},
+                  $Lightning.createComponent("c:cxh_PieChartDemo", {},
                      "accountboard",
                       function(cmp) {
                          // do some stuff
