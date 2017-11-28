@@ -25,6 +25,11 @@
     <script type="text/javascript" src="/sdk/js/canvas-all.js"></script>
     <!-- Third part libraries, substitute with your own -->
     <script type="text/javascript" src="/scripts/json2.js"></script>
+    <script type="text/javascript">
+        function f1(){
+            alert("I was clicked");
+        }
+    </script>
 
     <script>
         if (self === top) {
@@ -44,5 +49,6 @@
 <body>
     <br/>
     <h1>Hello <span id='username'></span></h1>
+    <button onclick="showAlert()">Alert</button>
 </body>
 </html>
